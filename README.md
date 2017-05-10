@@ -1,3 +1,3 @@
-# CMPT365 Assignment 2 
+# CMPT365 Assignment 2
 
 The first program, "Assignment2(Encode).py", takes a background image and a sprite image. Then, we get the size of the sprite image to place on the background image. Afterwards, we make a mask of the sprite image and the inverse of the mask. Then, we merge the background and foreground. The merged image is then compressed by following JPEG standard. First, it is transformed from RGB to YUV, then it undergoes a 4:2:0 chroma subsampling and a 2D DCT transformation. After the transformation, it is quantized with the quantization matrix and then it is scanned into a 1D array to be written to a .mrg file. A window of buttons will then pop up for the user to be able to display the images and the merged image. The second program, "Assignment2(Decode).py", takes the .mrg file and decode it to display the merged image.
